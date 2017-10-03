@@ -1,0 +1,142 @@
+# girl_friends.rb
+# a mini choose your own adventure game.
+
+# case options for adventure
+mall = "mall"
+zoo = "zoo"
+killing_spree = "kill"
+# secret code
+secret = "wyncode"
+
+# game menu	
+puts
+puts # string to warn audience 
+puts "WARNING! This game deals with themes of an Adult Nature!"
+puts # flavor text
+puts "Hey Girlfriend."
+puts "It's your best-friend, Lacey." 
+puts "We have like sooooooo much to do today."
+puts "Should we......" 
+puts # prompts user for mall
+puts "Go to the mall? Enter: mall"
+puts # prompts user for zoo
+puts "Go to the zoo? Enter: zoo"
+puts # prompts user for killing spree
+puts "Go on a KILLING spree? Enter: kill"
+puts
+option = gets.chomp.downcase
+
+# if user doesn't enter mall, zoo or kill
+until ["mall", "zoo", "kill", "wyncode"].include? option
+ puts # something to insult a smart-ass 
+ puts "YOU punk-ass-bitch, YOU will NEVER break my code!"
+ puts "Try following directions, genius!!!"
+ puts # user prompt for adventure options
+ puts "Enter one of the three following adventure options."
+ puts "MALL"
+ puts "ZOO"
+ puts "KILL"
+ puts
+	option = gets.chomp
+end
+
+# mall adventure option
+case option
+when mall
+	puts
+	puts "OMG Girlfriend you wanna go to the mall?" 
+	puts "See that's why we Girlfriends!!!"
+	puts "What store do you wanna go to?"
+	store = gets.chomp
+	puts "I love #{store.upcase}." 
+	puts "oh my god look at this cute hat"
+	puts "does it make my butt look too big?"
+	banter = gets.chomp
+	puts "#{banter.upcase}? you always keep it real Girlfriend."
+	puts "like ew he is like so gross...."
+	puts "OH NO its a ZOMBIE what do you wanna do?"
+	zombie_choice = gets.chomp
+	puts "#{zombie_choice.upcase} Great Choice"
+	puts "The ZOMBIE is defeated!!!!!!!"
+	puts "let's go home Girlfriend, I need my beauty rest"
+	puts
+	puts "                *GAME OVER GIRLFRIEND*" 
+	puts
+end
+
+# zoo adventure option
+case option
+when zoo
+	puts
+	puts "Okay Girlfriend you wanna go to the zoo?" 
+	puts "See that's why we Girlfriends!!!"
+	puts "Check this totes cute Coach purse I got on sale at the mall."
+	puts "what animal do you wanna see?"
+	animal = gets.chomp
+	puts "#{animal.upcase}, awe how like totally adorable"
+	puts "Oh-M-G look at those cute little monkies!!!!!!!"
+	puts "like nasty, did you see what it just did?"
+	monkey = gets.chomp
+	puts "#{monkey.upcase}? It just totally threw it's poop at me!"
+	puts "...monkey poop totally doesn't go with my super-cute Coach purse"
+	puts "and #{monkey.upcase} is all you have to say?"
+	snotty = gets.chomp
+	puts "#{snotty.upcase}, you're right Girlfriend"
+	puts "C'mon let's go to the mall!!!"
+	puts
+	puts "               *GAME OVER GIRLFRIEND*"
+	puts
+end
+
+# killing spree option
+case option
+when killing_spree
+	puts
+	puts "Damn Girlfriend you wanna go on a killing spree?" 
+	puts "See that's why we Girlfriends!!!"
+	puts "No seriously Girlfriend, this should be so totally fun"
+	puts "What shall we use to kill the most people at once?"
+	weapon = gets.chomp
+	puts "#{weapon.upcase}, great choice Girlfriend!"
+	puts "I'm bringing my Brahmin Bag full of hand-grenades!"
+	puts "Oh look Girlfriend"
+	puts "Some totally innocent peeps just swimming at the public pool"
+	puts "Wanna like totally go on like a blood-soaked-rampage?"
+	reply = gets.chomp
+	puts "#{reply.upcase}...HA HA HA Girlfriend, I thought you'd say that."
+	puts "I'm almost out of hand-grenades!"
+	puts "Ew!!! Like his brains are like all over my Brahmin. You havin' fun?"
+	fun = gets.chomp
+	puts "Well I don't care if you did just say #{fun.upcase}!!!"
+	puts "I hear the COPS, let's go to the mall."
+	puts "There's some super-cute dresses on sale at Tilly's!"
+	puts
+	puts "                 *GAME OVER GIRLFRIEND*"
+	puts 
+end	
+
+# secret area for the homies
+case option
+when secret
+	puts
+	puts 
+	puts
+	puts "WELCOME TO THE SUPER SECRET WYNCODE HOMIES AREA"
+	puts "This is for Cohort 19 and my friends"
+	puts "Jason, Jakki, Gabriel, Santiago, Josh, Raul, Claudio, Mario"
+	puts "Steven, Alex, Joy and others....... love you guys!!!!!!!!!!"
+	puts 
+	puts "What makes Wyncode such a great place for students?"
+	great = gets.chomp
+	puts "#{great.capitalize}, is a perfectly acceptable answer."
+	puts "'cause it's your answer."
+	puts "But there's more. And the Homies I mentioned understand that."
+	puts "Wyncode gives you access to 24 hours of Dev environment, "
+	puts "an amazing staff and an opportunity to make some solid friendships."
+	puts "The founders Juha and Jo have maybe by accident done something "
+	puts "truly amazing in the community and have offered Veterans like me "
+	puts "a wonderful and unique opportunity to obtain a new skill-set."
+	puts " Thank you Wyncode!!!!!"
+	puts 
+	puts "					*GAME OVER HOMIE!*"
+end
